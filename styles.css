@@ -1,0 +1,84 @@
+/* Style untuk hero section */
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.hero {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.hero-wrapper {
+  text-align: center;
+}
+.hero-first {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-second {
+  font-size: 1.2rem;
+  /* color: #666; */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+section {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+code {
+  background: #f4f4f4;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+article{
+  margin-top:40px;
+}
+
+.red{
+  color:red;
+  font-size:20px;
+}
