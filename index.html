@@ -1,84 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Web Development Guide</title>
-  <link rel="stylesheet" href="style.css">
-<style>
-  .green{
-    color:green;
-    font-size:18px;
-  }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test1.css">
+    <title>Modul2 HTML</title>
+    <style>
+      .internal-css{
+        color:green;
+      }
+    </style>
 </head>
 <body>
-  <section class="hero">
-  <div class="hero-wrapper">
-    <h1 class="hero-first">Praktikum Sistem Multimedia</h1>
-    <p class="hero-second">Modul 2. HTML</p>
-  </div>
-  </section>
+    <header>
+      <h1>Praktikum Sistem Multimedia</h1>
+      <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1>CSS Methods</h1>
+        </div>
+        <div class="sub-container">
+            <div class="card">
+                <div class="name">Inline CSS</div>
+                <div class="about">Metode Inline CSS diterapkan langsung dalam element HTML menggunakan atribut style. Metode ini cocok untuk styling secara cepat, namun tidak efektif untuk hal yang lebih besar.
+                </div>
+                <div style="color:red;">Kalimat ini menggunakan Inline CSS</div>
+            </div>
 
-  <div class="container">
-    <section>
-        <h2>CSS Methods</h2>
-        <article>
-            <h3>1. Inline CSS</h3>
-            <p>Metode Inline CSS diterapkan langsung dalam element HTML menggunakan atribut <code>style</code>.  Metode ini cocok untuk styling secara cepat, namun tidak efektif untuk hal yang lebih besar.</p>
-            <pre><code>&lt;p style="color: blue; font-size: 16px;"&gt;This is an inline-styled paragraph.&lt;/p&gt;</code></pre>
-            <p style="color: blue; font-size: 16px;">This is an inline-styled paragraph.</p>
-        </article>
-        
-        <article>
-            <h3>2. Internal CSS</h3>
-            <p>Metode Internal CSS ditulis di tag <code>&lt;head&gt;</code>pada dalam tag <code>&lt;style&gt;</code> di dokumen HTML <code>&lt;head&gt;</code> section of an HTML document. Efektif untuk apply style pada suatu page tanpa mempengaruhi page yang lain.</p>
-            <pre><code>&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-  &lt;style&gt;
-    p {
-        color: green;
-        font-size: 18px;
-    }
-  &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;p&gt;This is an internally-styled paragraph.&lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;</code></pre>
-          <p class="green">Kalimat di-style menggunakan internal CSS.</p>
-        </article>
-        
-        <article>
-            <h3>3. External CSS</h3>
-            <p>Metode External CSS ditulis di file berbeda dengan ekstensi file <code>.css</code> dan dihubungkan ke dokumen HTML menggunakan tag <code>&lt;link&gt;</code>. Metode ini yang sering digunakan ketika styling lebih kompleks.</p>
-            <pre><code>&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-  &lt;link rel="stylesheet" href="styles.css"&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;p&gt;This is an externally-styled paragraph.&lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;</code></pre>
-            <p>And in <code>styles.css</code>:</p>
-            <pre><code>p {
-  color: red;
-  font-size: 20px;
-  }</code></pre>
-          <p class="red">Kalimat ini menggunakan external css</p>
-        </article>
-    </section>
-    
-    <section>
-        <h2>HTML Layout with Semantics</h2>
-        <article>
-            <h3>1. &lt;header&gt;</h3>
-            <p>Element <code>&lt;header&gt;</code> header biasanya berisi konten seperti navigasi, ataupun logo.</p>
-            <pre><code>&lt;header&gt;
-  &lt;h1&gt;Welcome to Our Website&lt;/h1&gt;
+            <div class="card">
+                <div class="name">Internal CSS</div>
+                <div class="about">
+                Metode Internal CSS ditulis di tag &lt;head&gt;pada dalam tag &lt;style&gt; di dokumen HTML &lt;head&gt; section of an HTML document. Efektif untuk apply style pada suatu page tanpa mempengaruhi page yang lain.</div>
+                <div class="internal-css">Kalimat ini menggunakan Internal CSS</div>
+            </div>
+
+            <div class="card">
+                <div class="name">External CSS</div>
+                <div class="about">Metode External CSS ditulis di file berbeda dengan ekstensi file .css dan dihubungkan ke dokumen HTML menggunakan tag &lt;link&gt;. Metode ini yang sering digunakan ketika styling lebih kompleks.</div>
+                <div class="external-css">Kalimat ini menggunakan External CSS</div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+      <h1 class="left">HTML Layout With Semantics</h1>
+      <div class="middle">
+        <h3 class="subtitle">&lt;Header&gt;</h3>
+        <div class="article">
+            <p>Element &lt;header&gt; header biasanya berisi konten seperti navigasi, ataupun logo.</p>
+        <div class="code-container">
+          <pre>
+            <code>
+&lt;header&gt;
+  &lt;h1&gt;Praktikum Sistem Multimedia&lt;/h1&gt;
   &lt;nav&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -86,20 +66,31 @@
         &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/nav&gt;
-  &lt;/header&gt;</code></pre>
-        </article>
-        
-        <article>
-            <h3>2. &lt;nav&gt;</h3>
-            <p>Element <code>&lt;nav&gt;</code> biasanya berisi link-link navigasi.</p>
-            <pre><code>&lt;nav&gt;
+&lt;/header&gt;
+            </code>
+          </pre> 
+        </div>
+      </div>
+      </div>
+      <div class="right">
+        <h3 class="subtitle">&lt;Nav&gt;</h3>
+        <div class="article">
+            <p>Element &lt;nav&gt; biasanya berisi link-link navigasi.</p>
+        <div class="code-container">
+          <pre>
+            <code>
+&lt;nav&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#About"&gt;About&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
-  &lt;/nav&gt;</code></pre>
-        </article>
-        
+&lt;/nav&gt;
+            </code>
+          </pre> 
+        </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
